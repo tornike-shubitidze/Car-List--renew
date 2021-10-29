@@ -64,8 +64,7 @@ function save() {
         save.onerror = () => { return alert('Car Not Added! Try Again🙂') };
 
         save.onload = () => {
-            showHideForm();
-            clearForm();
+            hideForm();
             document.querySelector('.table-body').innerHTML = '';
             printCarsTable();
         }
@@ -84,10 +83,9 @@ function save() {
         edit.onerror = () => { return alert('Car Update Went wrong! Try Again🙂') };
 
         edit.onload = () => {
-            showHideForm();
+            hideForm();
             document.querySelector('.table-body').innerHTML = '';
             printCarsTable();
-            clearForm();
         }
     }
 }
@@ -110,7 +108,7 @@ function deleteCar(e) {
 
 function editCar(e) {
     if (!formIsOpen) {
-        showHideForm()
+        showForm()
     }
 
     let carId = e.getAttribute('data-car-id');
@@ -138,19 +136,31 @@ function editCar(e) {
 }
 
 
-function showHideForm() {
+function showForm() {
     let formEl = document.querySelector('.form');
+    formEl.classList.remove("hide");
+    formEl.style.display = "block";
+    formIsOpen = true;
 
-    if (formEl.classList.contains("hide")) {
-        formEl.classList.remove("hide");
-        formEl.style.display = "block";
-        formIsOpen = true;
-    } else {
-        formEl.classList.add("hide");
-        formEl.style.display = "none";
-        clearForm();
-        formIsOpen = false;
-    }
+    // SHOW/HIDE TOGETHER
+    // if (formEl.classList.contains("hide")) {
+    //     formEl.classList.remove("hide");
+    //     formEl.style.display = "block";
+    //     formIsOpen = true;
+    // } else {
+    //     formEl.classList.add("hide");
+    //     formEl.style.display = "none";
+    //     clearForm();
+    //     formIsOpen = false;
+    // }
+}
+
+function hideForm() {
+    let formEl = document.querySelector('.form');
+    formEl.classList.add("hide");
+    formEl.style.display = "none";
+    clearForm();
+    formIsOpen = false;
 }
 
 function clearForm() {
