@@ -17,7 +17,7 @@ function printCarsTable() {
                  <td>${car.name}</td>
                  <td>${car.description}</td>
                  <td>
-                 <img src="${car.logo}" style="width:50px;heigth=50px">
+                 <img src="${car.logo}" style="width:50px;heigth=50px" onerror="this.src='https://www.pikpng.com/pngl/m/16-169566_fail-png-camera-icon-clipart.png'">
                  </td>
                  <td>${car.specifications}</td> 
                  <td>
@@ -29,7 +29,7 @@ function printCarsTable() {
         tBodyEl.innerHTML = tbodyData;
     }
     http.onerror = () => {
-        return alert("UPS! Cars Data Not Found😬 First, Please Load Data!")
+        return alert("UPS!❌ Cars Data Not Found😬 First, Please Load Data!")
     }
     http.send();
 }
@@ -38,7 +38,7 @@ function printCarsTable() {
 function save() {
     let selectEl = document.getElementById("list");
 
-    if (selectEl.value == '' || document.querySelector('#description').value == '' || document.getElementById('logo').value == '') {
+    if (selectEl.value == '' || document.querySelector('#description').value.replace(/\s+/g, '').length == 0 || document.getElementById('logo').value.replace(/\s+/g, '').length == 0) {
         return alert('All Field Must Be Filled!')
     }
 
