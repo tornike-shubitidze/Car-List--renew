@@ -100,8 +100,10 @@ function deleteCar(e) {
 
         Delete.onerror = () => { return alert('Can Not Delete, Try Again') };
 
-        document.querySelector('.table-body').innerHTML = '';
-        printCarsTable();
+        Delete.onload = () => {
+            document.querySelector('.table-body').innerHTML = '';
+            printCarsTable();
+        }
     } else return
 }
 
