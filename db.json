@@ -1,0 +1,88 @@
+{
+  "cars": [
+    {
+      "name": "BMW",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+      "logo": "https://www.pikpng.com/pngl/m/51-517778_bmw-01-logo-png-transparent-bmw-logo-clipart.png",
+      "specifications": "ABS,შუშების ამწევი,პარკინგკონტროლი,ბორტკომპიუტერი",
+      "id": 1
+    },
+    {
+      "name": "MITSUBISHI",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+      "logo": "https://www.pikpng.com/pngl/m/10-100137_mitsubishi-logo-clipart.png",
+      "specifications": "ABS,შუშების ამწევი,ლუქი,bluetooth,სიგნალიზაცია,პარკინგკონტროლი,ბორტკომპიუტერი",
+      "id": 5
+    },
+    {
+      "name": "AUDI",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+      "logo": "https://www.pikpng.com/pngl/m/310-3102157_audi-logo-png-transparent-audi-logo-clipart.png",
+      "specifications": "ABS,შუშების ამწევი,bluetooth,სიგნალიზაცია,პარკინგკონტროლი,ბორტკომპიუტერი,მულტი საჭე",
+      "id": 3
+    },
+    {
+      "name": "MERCEDES",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+      "logo": "https://www.pikpng.com/pngl/m/86-860256_mercedes-benz-logo-meaning-and-history-latest-models.png",
+      "specifications": "ABS,შუშების ამწევი,ლუქი,bluetooth,სიგნალიზაცია,პარკინგკონტროლი,ნავიგაცია,ბორტკომპიუტერი",
+      "id": 2
+    },
+    {
+      "name": "TOYOTA",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+      "logo": "https://www.pikpng.com/pngl/m/54-549109_toyota-logo-vector-at-getdrawings-com-free-for.png",
+      "specifications": "ABS,შუშების ამწევი,ლუქი,სიგნალიზაცია,პარკინგკონტროლი,ნავიგაცია,ბორტკომპიუტერი",
+      "id": 4
+    },
+    {
+      "name": "BMW",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+      "logo": "https://www.pikpng.com/pngl/m/51-517778_bmw-01-logo-png-transparent-bmw-logo-clipart.png",
+      "specifications": "ABS,შუშების ამწევი,bluetooth,სიგნალიზაცია,პარკინგკონტროლი,ბორტკომპიუტერი,მულტი საჭე",
+      "id": 10
+    },
+    {
+      "name": "MITSUBISHI",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+      "logo": "https://www.pikpng.com/pngl/m/10-100137_mitsubishi-logo-clipart.png",
+      "specifications": "ABS,შუშების ამწევი,ლუქი,bluetooth,სიგნალიზაცია,პარკინგკონტროლი,ნავიგაცია,ბორტკომპიუტერი",
+      "id": 50
+    },
+    {
+      "name": "MITSUBISHI",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...",
+      "logo": "https://www.pikpng.com/pngl/m/10-100137_mitsubishi-logo-clipart.png",
+      "specifications": "ABS,ლუქი,პარკინგკონტროლი,მულტი საჭე",
+      "id": 52
+    },
+    {
+      "name": "AUDI",
+      "description": "კარგ მდგომარეობაშია",
+      "logo": "https://www.pikpng.com/pngl/m/310-3102157_audi-logo-png-transparent-audi-logo-clipart.png",
+      "specifications": "ABS,შუშების ამწევი,ლუქი",
+      "id": 53
+    },
+    {
+      "name": "MERCEDES",
+      "description": "მანქანა იდეალურ მდგომარეობაშია. ფასზე დალაპარაკება შეიძლება",
+      "logo": "https://www.pikpng.com/pngl/m/86-860256_mercedes-benz-logo-meaning-and-history-latest-models.png",
+      "specifications": "შუშების ამწევი,ლუქი,bluetooth",
+      "id": 54
+    },
+    {
+      "name": "TOYOTA",
+      "description": "ხელის დადება არაფერზე არ უნდა ძმააა",
+      "logo": "https://www.pikpng.com/pngl/m/54-549109_toyota-logo-vector-at-getdrawings-com-free-for.png",
+      "specifications": "ლუქი,სიგნალიზაცია,ნავიგაცია",
+      "id": 55
+    }
+  ],
+  "carNames": [
+    "BMW",
+    "MERCEDES",
+    "TOYOTA",
+    "AUDI",
+    "MITSUBISHI"
+  ]
+}

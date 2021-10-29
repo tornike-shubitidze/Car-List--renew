@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car List (Renew)</title>
+    <style>
+        * {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 2px solid #333;
+            text-align: left;
+            padding: 6px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Cars</h2>
+    <button onclick="showHideForm()" style="width:100px;letter-spacing:2.5px;font-size: medium;">Add
+        Car</button><br><br>
+    <form class="form hide" style="display: none;">
+        <input type="text" class="indicator" hidden>
+        <label>მანქანის მწარმოებელი </label>
+        <select id="list">
+            <option> </option>
+            <option value="BMW">BMW</option>
+            <option value="AUDI">AUDI</option>
+            <option value="MERCEDES">MERCEDES</option>
+            <option value="TOYOTA">TOYOTA</option>
+            <option value="MITSUBISHI">MITSUBISHI</option>
+        </select>
+        <label> აღწერა </label>
+        <textarea id="description" placeholder=" მანქანის აღწერა "></textarea>
+        <input type="text" id="logo" placeholder=" შეიყვანეთ მანქანის ლოგოს ლინკი... " style="width:250px;">
+        <label><input type="checkbox" value="ABS" class="specifications"> ABS </label>
+        <label><input type="checkbox" value="შუშების ამწევი" class="specifications"> შუშების ამწევი </label>
+        <label><input type="checkbox" value="ლუქი" class="specifications"> ლუქი </label>
+        <label><input type="checkbox" value="bluetooth" class="specifications"> Bluetooth </label>
+        <label><input type="checkbox" value="სიგნალიზაცია" class="specifications"> სიგნალიზაცია </label>
+        <label><input type="checkbox" value="პარკინგკონტროლი" class="specifications"> პარკინგკონტროლი </label>
+        <label><input type="checkbox" value="ნავიგაცია" class="specifications"> ნავიგაცია </label>
+        <label><input type="checkbox" value="ბორტკომპიუტერი" class="specifications"> ბორტკომპიუტერი </label>
+        <label><input type="checkbox" value="მულტი საჭე" class="specifications"> მულტი საჭე </label><br><br>
+        <button type="button" class="save-btn" onclick="save()"
+            style="width:70px;letter-spacing:4px;font-size: medium;"> save
+        </button>
+        <hr>
+    </form>
+
+    <table>
+        <tr>
+            <th>Car Name</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Specipications</th>
+            <th> Edit / Delete</th>
+        </tr>
+        <tbody class="table-body">
+
+        </tbody>
+    </table>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
